@@ -1,9 +1,12 @@
-import 'package:desafios_semanais/pages/desafio_1.dart';
 import 'package:desafios_semanais/routes/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:get/get.dart';
 
 void main() {
+  if (GetPlatform.isWeb) {
+    setUrlStrategy(PathUrlStrategy());
+  }
   runApp(const MyApp());
 }
 
