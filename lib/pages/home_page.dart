@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Get.toNamed('desafioum');
               },
-              child: Text('Desafio 1'),
+              child: Text('#boraCodar Um player de Música - Rocketseat'),
             )
           ],
         ),
