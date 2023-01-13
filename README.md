@@ -2,10 +2,9 @@
 
 Projeto Flutter desenvolvido para aplicar os projetos desenvolvidos no desafio proposto pela Rocketseat.
 
-## Getting Started
+## Meu Projeto
 
 O projeto conta com página inical para percorrer todos os projetos realizados.
-
 
 Tecnologias e funcionalidades aplicadas:
 
