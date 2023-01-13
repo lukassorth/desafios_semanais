@@ -1,15 +1,16 @@
-# desafios_semanais
+# Desafios Semanais - #boraCodar
 
-A new Flutter project.
+Projeto Flutter desenvolvido para aplicar os projetos desenvolvidos no desafio proposto pela Rocketseat.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+O projeto conta com página inical para percorrer todos os projetos realizados.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Tecnologias e funcionalidades aplicadas:
+
+- [GetX - Gerenciador de Estados, Rotas, Dependencias](https://github.com/jonataslaw/getx/blob/master/README.pt-br.md)
+- [Github Pages](lukassorth.github.io/desafios_semanais/)
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
