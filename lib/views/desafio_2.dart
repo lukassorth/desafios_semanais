@@ -115,7 +115,7 @@ class _DesafioDoisState extends State<DesafioDois> {
                       Text(
                         'Sofá Margot II - Rosé',
                         style: TextStyle(
-                          fontFamily: 'Crimson Pro',
+                          fontFamily: 'CrimsonPro',
                           fontWeight: FontWeight.w500,
                           fontSize: 32,
                           color: Color(0xff271A45),
