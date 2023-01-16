@@ -1,7 +1,12 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:desafios_semanais/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'constants.dart';
 
 void main() {
   if (GetPlatform.isWeb) {
@@ -18,8 +23,16 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Lucas Eduardo Orth',
-      theme: ThemeData(
-        primarySwatch: Colors.red,
+      theme: ThemeData.dark().copyWith(
+        primaryColor: primaryColor,
+        scaffoldBackgroundColor: bgColor,
+        canvasColor: bgColor,
+        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
+            .apply(bodyColor: Colors.white)
+            .copyWith(
+              bodyText1: TextStyle(color: bodyTextColor),
+              bodyText2: TextStyle(color: bodyTextColor),
+            ),
       ),
       initialRoute: '/home',
       getPages: appPages,

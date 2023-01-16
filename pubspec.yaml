@@ -40,6 +40,9 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   get:
+  google_fonts: ^2.1.0
+  flutter_svg: ^0.22.0
+  animated_text_kit: ^4.2.1
 
 dev_dependencies:
   flutter_test:

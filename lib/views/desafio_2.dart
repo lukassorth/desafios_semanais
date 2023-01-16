@@ -88,7 +88,10 @@ class _DesafioDoisState extends State<DesafioDois> {
                             child: Container(
                               height: 22,
                               width: 33,
-                              child: Icon(Icons.close),
+                              child: Icon(
+                                Icons.close,
+                                color: Get.theme.backgroundColor,
+                              ),
                             ),
                           ),
                   ],
