@@ -24,14 +24,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Lucas Eduardo Orth',
       theme: ThemeData.dark().copyWith(
+        useMaterial3: true,
         primaryColor: primaryColor,
         scaffoldBackgroundColor: bgColor,
         canvasColor: bgColor,
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
             .apply(bodyColor: Colors.white)
             .copyWith(
-              bodyText1: TextStyle(color: bodyTextColor),
-              bodyText2: TextStyle(color: bodyTextColor),
+              bodyLarge: TextStyle(color: bodyTextColor),
+              bodyMedium: TextStyle(color: bodyTextColor),
             ),
       ),
       initialRoute: '/home',

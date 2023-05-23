@@ -31,13 +31,26 @@ class HomeBanner extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Lucas Eduardo Orth",
+                  "Olá, sou Lucas Eduardo Orth",
                   style: Responsive.isDesktop(context)
-                      ? Theme.of(context).textTheme.headline3!.copyWith(
+                      ? Theme.of(context).textTheme.bodyMedium!.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontSize: 18,
+                          )
+                      : Theme.of(context).textTheme.headlineSmall!.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                ),
+                Text(
+                  "Desenvolvedor Flutter",
+                  style: Responsive.isDesktop(context)
+                      ? Theme.of(context).textTheme.displaySmall!.copyWith(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           )
-                      : Theme.of(context).textTheme.headline5!.copyWith(
+                      : Theme.of(context).textTheme.headlineSmall!.copyWith(
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),
@@ -45,11 +58,11 @@ class HomeBanner extends StatelessWidget {
                 Text(
                   "Seja bem-vindo!",
                   style: Responsive.isDesktop(context)
-                      ? Theme.of(context).textTheme.headline3!.copyWith(
+                      ? Theme.of(context).textTheme.displaySmall!.copyWith(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 32)
-                      : Theme.of(context).textTheme.headline5!.copyWith(
+                          fontSize: 18)
+                      : Theme.of(context).textTheme.headlineSmall!.copyWith(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontSize: 32),
@@ -114,7 +127,7 @@ class MyBuildAnimatedText extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTextStyle(
       // it applies same style to all the widgets under it
-      style: Theme.of(context).textTheme.subtitle1!,
+      style: Theme.of(context).textTheme.titleMedium!,
       maxLines: 1,
       child: Row(
         children: [
