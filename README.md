@@ -4,7 +4,7 @@ Projeto Flutter desenvolvido para aplicar os projetos desenvolvidos no desafio p
 
 ## Meu Projeto
 
-O projeto conta com página inical para percorrer todos os projetos realizados.
+O projeto conta com página inicial para percorrer todos os projetos realizados.
 
 Tecnologias e funcionalidades aplicadas:
 
