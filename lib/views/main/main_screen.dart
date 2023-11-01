@@ -14,7 +14,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // We hide the appbar on desktop
-      appBar: Responsive.isDesktop(context)
+      appBar: !Responsive.isMobile(context)
           ? null
           : AppBar(
               backgroundColor: bgColor,

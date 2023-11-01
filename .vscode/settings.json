@@ -1,0 +1,9 @@
+{
+    "local-history.absolute": true,
+    "workbench.tree.indent": 16,
+    "[dart]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
+    }
+}

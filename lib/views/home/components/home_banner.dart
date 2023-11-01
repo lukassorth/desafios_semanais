@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:desafios_semanais/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +18,7 @@ class HomeBanner extends StatelessWidget {
     return AspectRatio(
       aspectRatio: Responsive.isMobile(context) ? 2.5 : 3,
       child: Stack(
-        fit: StackFit.expand,
+        // fit: StackFit.expand,
         children: [
           // Image.asset(
           //   "assets/images/bg.jpeg",
@@ -72,11 +73,11 @@ class HomeBanner extends StatelessWidget {
                 MyBuildAnimatedText(),
                 SizedBox(height: defaultPadding),
                 // if (!Responsive.isMobileLarge(context))
-                Row(
+                Wrap(
                   children: [
                     ElevatedButton(
                       onPressed: () {
-                        Get.toNamed('/desafioum');
+                        Get.toNamed(Routes.DESAFIOUM);
                       },
                       style: TextButton.styleFrom(
                         padding: EdgeInsets.symmetric(
@@ -94,7 +95,7 @@ class HomeBanner extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Get.toNamed('/desafiodois');
+                        Get.toNamed(Routes.DESAFIODOIS);
                       },
                       style: TextButton.styleFrom(
                         padding: EdgeInsets.symmetric(
@@ -104,6 +105,24 @@ class HomeBanner extends StatelessWidget {
                       ),
                       child: Text(
                         "Desafio 2 #boraCodar",
+                        style: TextStyle(color: darkColor),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 25,
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Get.toNamed(Routes.STONEPAY);
+                      },
+                      style: TextButton.styleFrom(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: defaultPadding * 2,
+                            vertical: defaultPadding),
+                        backgroundColor: primaryColor,
+                      ),
+                      child: Text(
+                        "Stone Payments - Test",
                         style: TextStyle(color: darkColor),
                       ),
                     ),
@@ -156,7 +175,7 @@ class AnimatedText extends StatelessWidget {
     return AnimatedTextKit(
       animatedTexts: [
         TyperAnimatedText(
-          "aplicativos móveis e web responsivos.",
+          "aplicativos móveis e web.",
           speed: Duration(milliseconds: 60),
         ),
         // TyperAnimatedText(
