@@ -6,8 +6,7 @@ class CurrencyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black45,
+    return SizedBox(
       width: 360,
       height: 268,
       child: Column(
@@ -105,7 +104,12 @@ class CurrencyCard extends StatelessWidget {
                             (int index) => SizedBox(
                               width: 180,
                               child: RadioListTile<int>(
-                                title: Text(index == 0 ? 'Dinheiro' : 'Cartão'),
+                                activeColor: Colors.black,
+                                
+                                title: Text(
+                                  index == 0 ? 'Dinheiro' : 'Cartão',
+                                  style: const TextStyle(color: Colors.black),
+                                ),
                                 value: index,
                                 groupValue: 0,
                                 onChanged: (int? value) {},
@@ -119,15 +123,37 @@ class CurrencyCard extends StatelessWidget {
               ],
             ),
           ),
-          ElevatedButton(
-              onPressed: () {},
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SvgPicture.asset('assets/stone/icon_convert.svg'),
-                  const Text('Converter'),
-                ],
-              ))
+          Container(
+            width: 149,
+            height: 56,
+            padding: const EdgeInsets.all(16),
+            decoration: ShapeDecoration(
+              color: const Color(0xFF8C9CAD),
+              shape: RoundedRectangleBorder(
+                side: const BorderSide(width: 1, color: Color(0xFF008B57)),
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ),
+            child: Row(
+              
+              children: [
+                SvgPicture.asset(
+                  'assets/stone/icon_convert.svg',
+                  
+                ),
+                const SizedBox(width: 16),
+                const Text(
+                  'Converter',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontFamily: 'Sharon Sans',
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
