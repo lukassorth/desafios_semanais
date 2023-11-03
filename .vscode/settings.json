@@ -1,6 +1,7 @@
 {
     "local-history.absolute": true,
     "workbench.tree.indent": 16,
+    "debug.toolBarLocation": "commandCenter",
     "[dart]": {
         "editor.codeActionsOnSave": {
             "source.fixAll": true
